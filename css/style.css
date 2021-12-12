@@ -19,13 +19,87 @@ body {
 
 .link {
   text-decoration: none;
+  display: block;
 }
 
 .list {
   list-style: none;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h3,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section {
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+
 /* HEADER */
+.header {
+  background-color: teal;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigation-list {
+  display: flex;
+}
+
+.navigation-list-item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin-right: 71px;
+}
+
+.header-utils {
+  display: flex;
+}
+
+.header-utils .address {
+  margin-right: 40px;
+}
+
+.navigation-list-link {
+  padding-top: 52px;
+  padding-bottom: 52px;
+}
+
 .navigation-list-link,
 .header-tel,
 .modal-btn {
@@ -50,6 +124,7 @@ body {
 .modal-btn {
   letter-spacing: 0.09em;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .modal-btn:hover,
@@ -59,6 +134,30 @@ body {
 }
 
 /* HERO SECTION*/
+.hero {
+  outline: 2px solid olivedrab;
+}
+
+.hero .container {
+  display: flex;
+}
+
+.hero-desc {
+  background-color: tomato;
+  flex-grow: 1;
+  padding-left: 100px;
+  padding-top: 272px;
+  padding-bottom: 206px;
+}
+
+.hero .social-links {
+  display: flex;
+}
+
+.hero .social-links-item:not(:last-child) {
+  margin-right: 40px;
+}
+
 .social-links-item-link {
   font-weight: 600;
   font-size: 11px;
@@ -73,6 +172,8 @@ body {
 }
 
 .subtitle {
+  margin-bottom: 20px;
+
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
@@ -82,6 +183,8 @@ body {
 }
 
 .hero-title {
+  margin-bottom: 20px;
+
   font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 72px;
@@ -99,6 +202,28 @@ body {
 }
 
 /* ABOUT US */
+.about-us {
+  background-color: var(--text-dark-theme-color);
+}
+
+.about-us .container {
+  display: flex;
+}
+
+.about-us-list {
+  display: flex;
+  margin-right: 64px;
+}
+
+.about-us-list li:not(:last-child) {
+  margin-right: 30px;
+}
+
+.about-us .title,
+.about-us .description {
+  margin-bottom: 20px;
+}
+
 .about-us .subtitle {
   color: var(--text-light-teme-color);
 }
@@ -117,6 +242,8 @@ body {
 }
 
 .about-us .text {
+  margin-bottom: 40px;
+
   font-weight: 400;
   font-size: 14px;
   line-height: 1.86;
