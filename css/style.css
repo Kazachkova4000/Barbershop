@@ -6,7 +6,7 @@
   --modal-btn-dark-theme-color: #ffffff;
   --modal-btn-light-theme-color: #303030;
   --text-dark-theme-color: #9da4bd;
-  --text-light-teme-color: #555555;
+  --text-light-theme-color: #555555;
   --accent-color: #ff6c00;
   --section-bg-color: #f7f7f7;
 }
@@ -15,7 +15,7 @@ body {
   background-color: var(--title-dark-theme-color);
   font-family: var(--main-font);
   font-size: 18px;
-  color: var(--text-light-teme-color);
+  color: var(--text-light-theme-color);
 }
 
 .link {
@@ -140,7 +140,9 @@ img {
 
 /* HERO SECTION*/
 .hero {
-  outline: 2px solid olivedrab;
+  background-image: url(../images/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .hero .container {
@@ -148,7 +150,6 @@ img {
 }
 
 .hero-desc {
-  background-color: tomato;
   flex-grow: 1;
   padding-left: 100px;
   padding-top: 272px;
@@ -157,6 +158,7 @@ img {
 
 .social-links {
   display: flex;
+  align-items: center;
 }
 
 .social-links-item:not(:last-child) {
@@ -184,7 +186,25 @@ img {
   line-height: 1.36;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--text-dark-teme-color);
+  color: var(--text-dark-theme-color);
+}
+
+.social-links::before {
+  margin-right: 40px;
+  content: "";
+  width: 60px;
+  height: 1px;
+  background-color: var(--title-light-theme-color);
+}
+
+.subtitle::before {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 20px;
+  content: "";
+  width: 60px;
+  height: 1px;
+  background-color: var(--text-dark-theme-color);
 }
 
 .hero-title {
@@ -230,11 +250,15 @@ img {
 }
 
 .about-us .subtitle {
-  color: var(--text-light-teme-color);
+  color: var(--text-light-theme-color);
+}
+
+.about-us .subtitle::before {
+  background-color: var(--text-light-theme-color);
 }
 
 .about-us .description {
-  color: var(--text-light-teme-color);
+  color: var(--text-light-theme-color);
 }
 
 .title {
@@ -253,7 +277,7 @@ img {
   font-size: 14px;
   line-height: 1.86;
   letter-spacing: 0.02em;
-  color: var(--text-light-teme-color);
+  color: var(--text-light-theme-color);
 }
 
 .about-us .modal-btn {
@@ -281,7 +305,7 @@ img {
 }
 
 .services-list {
-  background-color: var(--text-light-teme-color);
+  background-color: var(--text-light-theme-color);
   flex-grow: 1;
   padding-top: 30px;
   padding-right: 40px;
@@ -342,7 +366,11 @@ img {
 
 .why-are-we .subtitle,
 .why-are-we .description {
-  color: var(--text-light-teme-color);
+  color: var(--text-light-theme-color);
+}
+
+.why-are-we .subtitle::before {
+  background-color: var(--text-light-theme-color);
 }
 
 .why-are-we .title {
@@ -392,6 +420,10 @@ img {
 
 .masters .subtitle {
   color: var(--text-light-theme-color);
+}
+
+.masters .subtitle::before {
+  background-color: var(--text-light-theme-color);
 }
 
 .masters-img {
@@ -444,6 +476,10 @@ img {
   color: var(--title-light-theme-color);
 }
 
+.gallery .subtitle::before {
+  background-color: var(--title-light-theme-color);
+}
+
 .gallery-list {
   display: flex;
   justify-content: space-between;
@@ -478,6 +514,10 @@ img {
 
 .contact .subtitle {
   color: var(--title-dark-theme-color);
+}
+
+.contact .subtitle::before {
+  background-color: var(--title-dark-theme-color);
 }
 
 .contact-list {
