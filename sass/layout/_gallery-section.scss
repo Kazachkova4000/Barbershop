@@ -1,0 +1,13 @@
+.gallery .subtitle {
+  margin-bottom: 44px;
+  color: var(--title-light-theme-color);
+}
+
+.gallery .subtitle::before {
+  background-color: var(--title-light-theme-color);
+}
+
+.gallery-list {
+  display: flex;
+  justify-content: space-between;
+}

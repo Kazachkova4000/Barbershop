@@ -1,0 +1,150 @@
+/* CONTACT-FORM */
+.contact-form-section {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 40px;
+}
+
+.contact-form-section-wrapper {
+  width: 560px;
+}
+
+.contact-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.contact-form-input,
+.contact-form-message {
+  @extend %form-input;
+}
+
+.contact-form-fild {
+  position: relative;
+  margin-bottom: 44px;
+}
+
+.contact-form-label {
+  @extend %form-label;
+
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.contact-form-message::placeholder {
+  text-transform: uppercase;
+}
+
+.contact-form-input:focus,
+.contact-form-message:focus {
+  outline: none;
+  border-bottom-color: #fff;
+}
+
+.contact-form-message:focus::placeholder {
+  color: #fff;
+}
+
+.contact-form-input:not(:placeholder-shown),
+.contact-form-message:not(:placeholder-shown) {
+  border-bottom-color: #fff;
+}
+
+.contact-form-input {
+  width: 260px;
+  height: 24px;
+}
+
+.contact-form-input:focus + .contact-form-label,
+.contact-form-input:not(:placeholder-shown) + .contact-form-label {
+  transform: translateY(-30px);
+  color: #fff;
+}
+
+.contact-form-message {
+  width: 100%;
+  height: 76px;
+  resize: none;
+  margin-bottom: 44px;
+}
+
+/* CONTACT */
+.contact-wrapper {
+  display: flex;
+  background-color: #191c26;
+}
+
+.contact-wrapper > section {
+  flex-basis: 50%;
+}
+
+/* .contact-form {
+    background-color: #191c26;
+  } */
+
+.contact {
+  padding-left: 100px;
+  /* background-color: #090b13; */
+  background-image: url(../images/contact-bg.png);
+  background-repeat: no-repeat;
+}
+
+.contact-info {
+  width: 270px;
+}
+
+.contact .title,
+.contact-form-section .title {
+  margin-bottom: 40px;
+  color: var(--title-dark-theme-color);
+}
+
+.contact .subtitle {
+  color: var(--title-dark-theme-color);
+}
+
+.contact .subtitle::before {
+  background-color: var(--title-dark-theme-color);
+}
+
+.contact-list {
+  margin-bottom: 70px;
+}
+
+.contact-list-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.contact-link {
+  display: flex;
+  align-items: center;
+
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: var(--text-dark-theme-color);
+}
+
+.contact-time {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: var(--text-dark-theme-color);
+}
+
+.contact-item-svg {
+  width: 24px;
+  height: 24px;
+  margin-right: 16px;
+}
+
+.map-pin {
+  width: 30px;
+  height: 30px;
+  align-self: flex-start;
+  margin-top: 6px;
+}

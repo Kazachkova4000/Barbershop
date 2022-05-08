@@ -1,0 +1,126 @@
+.backdrop {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-form {
+  width: 500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 60px;
+}
+
+.modal-form-title {
+  margin-bottom: 30px;
+}
+
+.modal-form-input,
+.modal-form-message {
+  @extend %form-input;
+
+  display: block;
+  width: 100%;
+  color: $title-light-theme-color;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.modal-form-input {
+  height: 30px;
+
+  &:focus,
+  &:not(:placeholder-shown) {
+    border-bottom-color: $accent-color;
+  }
+}
+
+.modal-form-message {
+  margin-bottom: 40px;
+  height: 60px;
+  resize: none;
+
+  &:focus,
+  &:not(:placeholder-shown) {
+    border-bottom-color: $accent-color;
+  }
+}
+
+.modal-form-input-wrapper {
+  position: relative;
+
+  margin-bottom: 40px;
+}
+
+.modal-form-label {
+  @extend %form-label;
+
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+
+  .modal-form-input:focus + &,
+  .modal-form-input:not(:placeholder-shown) + & {
+    transform: translateY(-30px);
+    color: $accent-color;
+  }
+}
+
+.madal-form-checkbox-lable {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.modal-form-span {
+  font-size: 12px;
+
+  & a {
+    color: #3498db;
+  }
+
+  // .modal-form-checkbox:checked & {
+  //   text-decoration: underline;
+  // }
+}
+
+.modal-form-checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.modal-form-custom-checkbox {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  outline: 1px solid $text-light-theme-color;
+  margin-right: 10px;
+
+  .modal-form-checkbox:checked + & {
+    background-color: $accent-color;
+    border: 3px solid #fff;
+  }
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}

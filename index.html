@@ -11,8 +11,9 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/normalize.css" />
-    <link rel="stylesheet" href="./css/style.css" />
+    <!-- <link rel="stylesheet" href="./css/normalize.css" /> -->
+    <!-- <link rel="stylesheet" href="./css/style.css" /> -->
+    <link rel="stylesheet" href="./css/main.min.css">
   </head>
   <body>
     <!--Шапка сайта-->
@@ -45,7 +46,7 @@
               +38011111111
             </a>
           </address>
-          <button class="modal-btn">онлайн-запись</button>
+          <button data-modal-open class="modal-btn">онлайн-запись</button>
         </div>
       </div>
     </header>
@@ -54,7 +55,7 @@
       <!--HERO-секция-->
       <section class="hero">
         <div class="container">
-          <div class="">
+          <div class="social-links-wrapper">
             <ul class="social-links list">
               <li class="social-links-item">
                 <a class="social-links-item-link link" href="" lang="en"
@@ -113,7 +114,7 @@
               клиентами "на одной волне". Поэтому, мы всегда готовы
               усовершенствовать каждого, кто к нам приходит!
             </p>
-            <button type="button" class="modal-btn">онлайн-запись</button>
+            <button data-modal-open type="button" class="modal-btn">онлайн-запись</button>
           </div>
         </div>
       </section>
@@ -126,43 +127,49 @@
             <ul class="services-list list">
               <li class="services-item">
                 <span class="services-list-name">Мужская стрижка</span>
+                <span class="services-underline"></span>
                 <span class="services-list-price">от 300 грн.</span>
               </li>
               <li class="services-item">
                 <span class="services-list-name">Стрижка бороды</span>
+                <span class="services-underline"></span>
                 <span class="services-list-price">от 200 грн.</span>
               </li>
               <li class="services-item">
                 <span class="services-list-name">Стрижка усов</span>
+                <span class="services-underline"></span>
                 <span class="services-list-price">от 200грн.</span>
               </li>
               <li class="services-item">
                 <span class="services-list-name">Бритье опасной бритвой</span>
+                <span class="services-underline"></span>
                 <span class="services-list-price">от 200грн.</span>
               </li>
             </ul>
             <ul class="services-list list">
               <li class="services-item">
                 <span class="services-list-name">Стрижка у стажера</span>
+                <span class="services-underline"></span>
                 <span class="services-list-price">от 50 грн.</span>
               </li>
               <li class="services-item">
                 <span class="services-list-name">Стрижка под насадку</span>
+                <span class="services-underline"></span>
                 <span class="services-list-price">от 200 грн.</span>
               </li>
               <li class="services-item">
-                <span class="services-list-name"
-                  >Детская стрижка (до 12 лет)</span
-                >
+                <span class="services-list-name">Детская стрижка (до 12 лет)</span>
+                  <span class="services-underline"></span>
                 <span class="services-list-price">от 300 грн.</span>
               </li>
               <li class="services-item">
                 <span class="services-list-name">Камуфлирование седины</span>
+                <span class="services-underline"></span>
                 <span class="services-list-price">от 200 грн.</span>
               </li>
             </ul>
           </div>
-          <button type="button" class="modal-btn">онлайн-запись</button>
+          <button data-modal-open type="button" class="modal-btn">онлайн-запись</button>
         </div>
       </section>
       <!-- Почему мы -->
@@ -383,13 +390,22 @@
       </section>
       <div class="contact-wrapper">
         <!-- Форма обратной связи -->
-        <section class="contact-form section">
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi,
-            minus laudantium voluptatum mollitia consequuntur nulla fugit
-            cupiditate numquam esse repellendus dolor at aspernatur animi
-            veritatis blanditiis aliquid nam suscipit reiciendis?
-          </p>
+        <section class="contact-form-section section">
+          <div class="contact-form-section-wrapper">
+            <h2 class="title">Онлайн-запись</h2>
+          <form action="#" class="contact-form">
+            <div class="contact-form-fild">
+              <input class="contact-form-input" type="text" name="user-name" id="user-name" placeholder=" " required>
+            <label for="user-name" class="contact-form-label">Имя*</label>
+            </div>
+            <div class="contact-form-fild">
+              <input class="contact-form-input" type="tel" name="user-tel" id="user-tel" placeholder=" "  required>
+            <label for="user-tel" class="contact-form-label">Телефон*</label>
+            </div>
+            <textarea class="contact-form-message" name="user-message" id="" placeholder="сообщение"></textarea>
+          <button class="contact-form-btn" type="submit">отправить</button>
+          </form>
+          </div>
         </section>
         <!-- Контакты -->
         <section class="contact section">
@@ -455,5 +471,28 @@
         </ul>
       </div>
     </footer>
+    <div data-modal class="backdrop is-hidden">
+      <form action="#" class="modal-form">
+      <h2 class="modal-form-title">Онлайн запись</h2>
+      <button type="button" data-modal-close class="modal-close-button">X</button>
+      <div class="modal-form-input-wrapper">
+        <input id="user-modal-name" type="text" name="user-name" class="modal-form-input" placeholder=" " required>
+        <label class="modal-form-label" for="">Имя*</label>
+      </div>
+      <div class="modal-form-input-wrapper">
+      <input id="user-modal-tel" type="text" name="user-tel" class="modal-form-input" placeholder=" " required>
+    <label class="modal-form-label" for="">Телефон*</label>
+    </div>
+      <textarea  class="modal-form-message" name="user-message" placeholder="Сообщение" ></textarea>
+      <label class="madal-form-checkbox-lable" >
+        <input type="checkbox" name="policy" value="accept-policy" class="modal-form-checkbox"></input>     
+      <span class="modal-form-custom-checkbox"></span>
+        <span class="modal-form-span">Я согласен с <a href="#">политикой конфиденциальности</a></span>
+      </label>
+      
+    <button class="modal-form-button" type="submit">Отправить</button>  
+    </form>  
+          </div>
+            <script src="./js/modal.js"></script>
   </body>
 </html>
