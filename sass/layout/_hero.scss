@@ -10,10 +10,48 @@
   background-repeat: no-repeat;
   background-position: right;
   background-size: 1125px auto;
+
+  .container {
+    display: flex;
+  }
+
+  .social-links {
+    @extend %list;
+
+    position: absolute;
+    left: 27px;
+    bottom: 40px;
+    transform: rotate(-90deg);
+    transform-origin: left;
+  }
 }
 
-.hero .container {
-  display: flex;
+.hero-background {
+  background-image: linear-gradient(
+    90deg,
+    #fff,
+    #d5d5d5,
+    #aaaaab,
+    #808082,
+    #555558,
+    #2b2b2e,
+    #27272b,
+    #232328,
+    #1f1f25,
+    #1b1a22,
+    #17161f,
+    #13121c
+  );
+}
+
+.hero-title {
+  margin-bottom: 20px;
+  font-family: $secondary-font;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 1.18;
+  letter-spacing: 0.05em;
+  color: $title-dark-theme-color;
 }
 
 .hero-desc {
@@ -28,82 +66,23 @@
   width: 100px;
 }
 
-.hero .social-links {
-  position: absolute;
-  left: 27px;
-  bottom: 40px;
-  transform: rotate(-90deg);
-  transform-origin: left;
-}
-
-.social-links {
-  display: flex;
-  align-items: center;
-}
-
 .social-links-item:not(:last-child) {
   margin-right: 40px;
 }
 
 .social-links-item-link {
+  @extend %link;
+
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
   letter-spacing: 0.2em;
-  color: var(--title-light-theme-color);
+  color: $title-light-theme-color;
 
   transition: color 250ms linear;
-}
 
-.social-links-item-link:hover,
-.social-links-item-link:focus {
-  color: var(--accent-color);
-}
-
-.subtitle {
-  margin-bottom: 20px;
-
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.36;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--text-dark-theme-color);
-}
-
-.social-links::before {
-  margin-right: 40px;
-  content: "";
-  width: 60px;
-  height: 1px;
-  background-color: var(--title-light-theme-color);
-}
-
-.subtitle::before {
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: 20px;
-  content: "";
-  width: 60px;
-  height: 1px;
-  background-color: var(--text-dark-theme-color);
-}
-
-.hero-title {
-  margin-bottom: 20px;
-
-  font-family: var(--secondary-font);
-  font-weight: 700;
-  font-size: 72px;
-  line-height: 1.18;
-  letter-spacing: 0.05em;
-  color: var(--title-dark-theme-color);
-}
-
-.description {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.67;
-  letter-spacing: 0.02em;
-  color: var(--text-dark-theme-color);
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
 }

@@ -1,3 +1,17 @@
+%link {
+  text-decoration: none;
+  display: block;
+}
+
+%list {
+  list-style: none;
+}
+
+%section {
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+
 %form-input {
   font-family: $main-font;
   font-weight: 600;
@@ -8,6 +22,31 @@
   border-bottom: 1px solid rgba(157, 164, 189, 0.4);
   /* margin-bottom: 44px; */
   color: #fff;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+%form-input-contact {
+  &:focus {
+    border-bottom-color: #fff;
+  }
+
+  &:not(:placeholder-shown) {
+    border-bottom-color: #fff;
+  }
+}
+
+%form-input-modal {
+  display: block;
+  width: 100%;
+  color: $title-light-theme-color;
+
+  &:focus,
+  &:not(:placeholder-shown) {
+    border-bottom-color: $accent-color;
+  }
 }
 
 %form-label {
@@ -19,3 +58,21 @@
 
   transition: transform 250ms linear;
 }
+
+%font-header {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+  color: $title-dark-theme-color;
+
+  transition: color 250ms linear;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+// %button-style {
+// }

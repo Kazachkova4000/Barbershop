@@ -23,37 +23,20 @@
   margin-bottom: 30px;
 }
 
-.modal-form-input,
+.modal-form-input {
+  @extend %form-input;
+  @extend %form-input-modal;
+
+  height: 30px;
+}
+
 .modal-form-message {
   @extend %form-input;
+  @extend %form-input-modal;
 
-  display: block;
-  width: 100%;
-  color: $title-light-theme-color;
-
-  &:focus {
-    outline: none;
-  }
-}
-
-.modal-form-input {
-  height: 30px;
-
-  &:focus,
-  &:not(:placeholder-shown) {
-    border-bottom-color: $accent-color;
-  }
-}
-
-.modal-form-message {
   margin-bottom: 40px;
   height: 60px;
   resize: none;
-
-  &:focus,
-  &:not(:placeholder-shown) {
-    border-bottom-color: $accent-color;
-  }
 }
 
 .modal-form-input-wrapper {
@@ -86,13 +69,9 @@
 .modal-form-span {
   font-size: 12px;
 
-  & a {
+  a {
     color: #3498db;
   }
-
-  // .modal-form-checkbox:checked & {
-  //   text-decoration: underline;
-  // }
 }
 
 .modal-form-checkbox {

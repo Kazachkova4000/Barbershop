@@ -1,13 +1,19 @@
-.gallery .subtitle {
-  margin-bottom: 44px;
-  color: var(--title-light-theme-color);
-}
+.gallery {
+  @extend %section;
 
-.gallery .subtitle::before {
-  background-color: var(--title-light-theme-color);
+  .subtitle {
+    margin-bottom: 44px;
+    color: $title-light-theme-color;
+
+    &::before {
+      background-color: $title-light-theme-color;
+    }
+  }
 }
 
 .gallery-list {
+  @extend %list;
+
   display: flex;
   justify-content: space-between;
 }

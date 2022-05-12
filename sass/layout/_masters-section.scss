@@ -1,22 +1,26 @@
 .masters {
-  background-color: var(--section-bg-color);
+  @extend %section;
+
+  background-color: $section-bg-color;
+
+  .title {
+    margin-bottom: 44px;
+  }
+
+  .subtitle {
+    color: $text-light-theme-color;
+
+    &::before {
+      background-color: $text-light-theme-color;
+    }
+  }
 }
 
 .masters-list {
+  @extend %list;
+
   display: flex;
   justify-content: space-between;
-}
-
-.masters .title {
-  margin-bottom: 44px;
-}
-
-.masters .subtitle {
-  color: var(--text-light-theme-color);
-}
-
-.masters .subtitle::before {
-  background-color: var(--text-light-theme-color);
 }
 
 .masters-img {
@@ -31,7 +35,7 @@
   line-height: 1.39;
   text-align: center;
   letter-spacing: 0.02em;
-  color: var(--title-light-theme-color);
+  color: $title-light-theme-color;
 }
 
 .masters-position {
@@ -42,10 +46,12 @@
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.02em;
-  color: var(--accent-color);
+  color: $accent-color;
 }
 
 .social-list {
+  @extend %list;
+
   display: flex;
   justify-content: space-between;
   max-width: 206px;
@@ -54,6 +60,8 @@
 }
 
 .social-list-item-link {
+  @extend %link;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -68,9 +76,9 @@
   height: 20px;
 
   transition: fill 250ms linear;
-}
 
-.social-list-item-link:hover .social-item-svg,
-.social-list-item-link:focus .social-item-svg {
-  fill: var(--accent-color);
+  .social-list-item-link:hover &,
+  .social-list-item-link:focus & {
+    fill: $accent-color;
+  }
 }

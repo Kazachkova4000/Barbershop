@@ -2,8 +2,15 @@
 @import './utils/variables';
 @import './base/base';
 @import './utils/placeholder';
+@import './utils/common-for-sections';
 @import './components/button';
-
+@import './layout/header';
+@import './layout/hero';
+@import './layout/about-section';
+@import './layout/services-section';
+@import './layout/why-are-we-section';
+@import './layout/masters-section';
+@import './layout/gallery-section';
 @import './layout/contact-section';
-
+@import './layout/footer';
 @import './components/modal';
