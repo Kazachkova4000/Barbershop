@@ -7,72 +7,69 @@
   list-style: none;
 }
 
-%section {
-  padding-top: 130px;
-  padding-bottom: 130px;
-}
+// %font-header {
+//   font-weight: 600;
+//   font-size: 12px;
+//   line-height: 1.33;
+//   letter-spacing: 0.1em;
+//   color: $title-dark-theme-color;
 
-%form-input {
-  font-family: $main-font;
-  font-weight: 600;
-  font-size: 11px;
-  letter-spacing: 0.1em;
-  border: none;
-  background-color: transparent;
-  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
-  /* margin-bottom: 44px; */
-  color: #fff;
+//   transition: color 250ms linear;
 
-  &:focus {
-    outline: none;
-  }
-}
+//   &:hover,
+//   &:focus {
+//     color: $accent-color;
+//   }
+// }
 
-%form-input-contact {
-  &:focus {
-    border-bottom-color: #fff;
-  }
+// %section {
+//   padding-top: 130px;
+//   padding-bottom: 130px;
+// }
 
-  &:not(:placeholder-shown) {
-    border-bottom-color: #fff;
-  }
-}
+// %form-input {
+//   font-family: $main-font;
+//   font-weight: 600;
+//   font-size: 11px;
+//   letter-spacing: 0.1em;
+//   border: none;
+//   background-color: transparent;
+//   border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+//   /* margin-bottom: 44px; */
+//   color: #fff;
 
-%form-input-modal {
-  display: block;
-  width: 100%;
-  color: $title-light-theme-color;
+//   &:focus {
+//     outline: none;
+//   }
+// }
 
-  &:focus,
-  &:not(:placeholder-shown) {
-    border-bottom-color: $accent-color;
-  }
-}
+// %form-input-contact {
+//   &:focus {
+//     border-bottom-color: #fff;
+//   }
 
-%form-label {
-  font-family: $main-font;
-  font-weight: 600;
-  font-size: 11px;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
+//   &:not(:placeholder-shown) {
+//     border-bottom-color: #fff;
+//   }
+// }
 
-  transition: transform 250ms linear;
-}
+// %form-input-modal {
+//   display: block;
+//   width: 100%;
+//   color: $title-light-theme-color;
 
-%font-header {
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 1.33;
-  letter-spacing: 0.1em;
-  color: $title-dark-theme-color;
+//   &:focus,
+//   &:not(:placeholder-shown) {
+//     border-bottom-color: $accent-color;
+//   }
+// }
 
-  transition: color 250ms linear;
+// %form-label {
+//   font-family: $main-font;
+//   font-weight: 600;
+//   font-size: 11px;
+//   letter-spacing: 0.1em;
+//   text-transform: uppercase;
 
-  &:hover,
-  &:focus {
-    color: $accent-color;
-  }
-}
-
-// %button-style {
+//   transition: transform 250ms linear;
 // }

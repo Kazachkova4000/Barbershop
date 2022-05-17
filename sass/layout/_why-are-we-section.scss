@@ -1,90 +1,90 @@
-.why-are-we {
-  @extend %section;
+// .why-are-we {
+//   @extend %section;
 
-  ul {
-    @extend %list;
-  }
+//   ul {
+//     @extend %list;
+//   }
 
-  .container {
-    display: flex;
-  }
+//   .container {
+//     display: flex;
+//   }
 
-  .title {
-    margin-bottom: 30px;
-  }
+//   .title {
+//     margin-bottom: 30px;
+//   }
 
-  .subtitle {
-    color: $text-light-theme-color;
+//   .subtitle {
+//     color: $text-light-theme-color;
 
-    &::before {
-      background-color: $text-light-theme-color;
-    }
-  }
+//     &::before {
+//       background-color: $text-light-theme-color;
+//     }
+//   }
 
-  .description {
-    color: $text-light-theme-color;
-  }
+//   .description {
+//     color: $text-light-theme-color;
+//   }
 
-  .list:nth-child(even) {
-    margin-top: 54px;
-  }
+//   .list:nth-child(even) {
+//     margin-top: 54px;
+//   }
 
-  .list:nth-child(odd) {
-    margin-right: 30px;
-  }
-}
+//   .list:nth-child(odd) {
+//     margin-right: 30px;
+//   }
+// }
 
-.why-are-we-list-wrapper {
-  display: flex;
-  margin-right: 130px;
-}
+// .why-are-we-list-wrapper {
+//   display: flex;
+//   margin-right: 130px;
+// }
 
-.why-are-we-item {
-  padding-top: 20px;
-  padding-right: 24px;
-  padding-bottom: 20px;
-  padding-left: 24px;
-  background-color: $section-bg-color;
+// .why-are-we-item {
+//   padding-top: 20px;
+//   padding-right: 24px;
+//   padding-bottom: 20px;
+//   padding-left: 24px;
+//   background-color: $section-bg-color;
 
-  &:not(:last-child) {
-    margin-bottom: 30px;
-  }
-}
+//   &:not(:last-child) {
+//     margin-bottom: 30px;
+//   }
+// }
 
-.why-are-we-text-content {
-  width: 500px;
-}
+// .why-are-we-text-content {
+//   width: 500px;
+// }
 
-.why-are-we-count {
-  position: relative;
-  width: max-content;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 6px;
+// .why-are-we-count {
+//   position: relative;
+//   width: max-content;
+//   margin-left: auto;
+//   margin-right: auto;
+//   margin-bottom: 6px;
 
-  font-weight: 700;
-  font-size: 42px;
-  line-height: 1.36;
-  letter-spacing: 0.05em;
-  text-align: center;
-  color: $title-light-theme-color;
-}
+//   font-weight: 700;
+//   font-size: 42px;
+//   line-height: 1.36;
+//   letter-spacing: 0.05em;
+//   text-align: center;
+//   color: $title-light-theme-color;
+// }
 
-.why-are-we-description {
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.36;
-  letter-spacing: 0.02em;
-  text-align: center;
-  color: $title-light-theme-color;
-}
+// .why-are-we-description {
+//   font-weight: 600;
+//   font-size: 11px;
+//   line-height: 1.36;
+//   letter-spacing: 0.02em;
+//   text-align: center;
+//   color: $title-light-theme-color;
+// }
 
-.symbol-plus {
-  position: absolute;
-  top: 7px;
-  right: -11px;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 1.38;
-  color: $accent-color;
-}
+// .symbol-plus {
+//   position: absolute;
+//   top: 7px;
+//   right: -11px;
+//   font-weight: 600;
+//   font-size: 16px;
+//   line-height: 1.38;
+//   color: $accent-color;
+// }

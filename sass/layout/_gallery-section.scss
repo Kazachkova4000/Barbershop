@@ -1,19 +1,19 @@
-.gallery {
-  @extend %section;
+// .gallery {
+//   @extend %section;
 
-  .subtitle {
-    margin-bottom: 44px;
-    color: $title-light-theme-color;
+//   .subtitle {
+//     margin-bottom: 44px;
+//     color: $title-light-theme-color;
 
-    &::before {
-      background-color: $title-light-theme-color;
-    }
-  }
-}
+//     &::before {
+//       background-color: $title-light-theme-color;
+//     }
+//   }
+// }
 
-.gallery-list {
-  @extend %list;
+// .gallery-list {
+//   @extend %list;
 
-  display: flex;
-  justify-content: space-between;
-}
+//   display: flex;
+//   justify-content: space-between;
+// }

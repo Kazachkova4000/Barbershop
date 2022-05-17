@@ -1,56 +1,56 @@
-.about-us {
-  @extend %section;
+// .about-us {
+//   @extend %section;
 
-  .container {
-    display: flex;
-  }
+//   .container {
+//     display: flex;
+//   }
 
-  .title {
-    margin-bottom: 20px;
-  }
+//   .title {
+//     margin-bottom: 20px;
+//   }
 
-  .subtitle {
-    color: $text-light-theme-color;
+//   .subtitle {
+//     color: $text-light-theme-color;
 
-    &::before {
-      background-color: $text-light-theme-color;
-    }
-  }
+//     &::before {
+//       background-color: $text-light-theme-color;
+//     }
+//   }
 
-  .description {
-    color: $text-light-theme-color;
-    margin-bottom: 20px;
-  }
+//   .description {
+//     color: $text-light-theme-color;
+//     margin-bottom: 20px;
+//   }
 
-  .text {
-    margin-bottom: 40px;
+//   .text {
+//     margin-bottom: 40px;
 
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.86;
-    letter-spacing: 0.02em;
-    color: $text-light-theme-color;
-  }
+//     font-weight: 400;
+//     font-size: 14px;
+//     line-height: 1.86;
+//     letter-spacing: 0.02em;
+//     color: $text-light-theme-color;
+//   }
 
-  .modal-btn {
-    color: $modal-btn-light-theme-color;
+//   .modal-btn {
+//     color: $modal-btn-light-theme-color;
 
-    transition: color 250ms linear, background-color 250ms linear;
+//     transition: color 250ms linear, background-color 250ms linear;
 
-    &:hover,
-    &:focus {
-      color: $modal-btn-dark-theme-color;
-    }
-  }
-}
+//     &:hover,
+//     &:focus {
+//       color: $modal-btn-dark-theme-color;
+//     }
+//   }
+// }
 
-.about-us-list {
-  @extend %list;
+// .about-us-list {
+//   @extend %list;
 
-  display: flex;
-  margin-right: 64px;
+//   display: flex;
+//   margin-right: 64px;
 
-  li:not(:last-child) {
-    margin-right: 30px;
-  }
-}
+//   li:not(:last-child) {
+//     margin-right: 30px;
+//   }
+// }

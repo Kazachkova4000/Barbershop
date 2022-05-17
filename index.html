@@ -13,47 +13,68 @@
     />
     <!-- <link rel="stylesheet" href="./css/normalize.css" /> -->
     <!-- <link rel="stylesheet" href="./css/style.css" /> -->
-    <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <!--Шапка сайта-->
     <header class="header">
       <div class="container">
-        <nav class="navigation">
-          <a class="logo" href="./index.html" aria-label="Логотип">           
-            <svg width="69" hieght="55">
-              <use href="./images/sprite.svg#logo"></use>
-            </svg>
-          </a>
-           <ul class="navigation-list">
-            <li class="navigation-list-item">
-              <a class="navigation-list-link" href="">О нас</a>
+        <a class="logo" href="./index.html" aria-label="Логотип">
+          <svg width="69" height="55">
+            <use href="./images/sprite.svg#logo"></use>
+          </svg>
+        </a>
+        <button
+          type="button"
+          class="menu-btn"
+          aria-expanded="false"
+          aria-controls="menu-wrapper"
+          data-menu-button
+        >
+          <svg width="40" height="40">
+            <use class="icon-menu" href="./images/sprite.svg#menu"></use>
+            <use class="icon-close" href="./images/sprite.svg#close"></use>
+          </svg>
+        </button>
+
+        <div class="menu-wrapper" data-menu>
+          <nav class="navigation">
+            <ul class="navigation-list">
+              <li class="navigation-list-item">
+                <a class="navigation-list-link" href="">О нас</a>
+              </li>
+              <li class="navigation-list-item">
+                <a class="navigation-list-link" href="">Услуги и цены</a>
+              </li>
+              <li class="navigation-list-item">
+                <a class="navigation-list-link" href="">Мастера</a>
+              </li>
+              <li class="navigation-list-item">
+                <a class="navigation-list-link" href="">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header-utils">
+            <address class="address">
+              <a class="header-tel" href="tel:+38011111111"> +38011111111 </a>
+            </address>
+            <button data-modal-open class="modal-btn">онлайн-запись</button>
+          </div>
+          <ul class="header-social-list">
+            <li class="header-socisl-list-item">
+              <a href="" class="header-social-list-item-link">Instagram</a>
             </li>
-            <li class="navigation-list-item">
-              <a class="navigation-list-link" href="">Услуги и цены</a>
-            </li>
-            <li class="navigation-list-item">
-              <a class="navigation-list-link" href="">Мастера</a>
-            </li>
-            <li class="navigation-list-item">
-              <a class="navigation-list-link" href="">Контакты</a>
+            <li class="header-socisl-list-item">
+              <a href="" class="header-social-list-item-link">Youtube</a>
             </li>
           </ul>
-        </nav>
-        <div class="header-utils">
-          <address class="address">
-            <a class="header-tel" href="tel:+38011111111">
-              +38011111111
-            </a>
-          </address>
-          <button data-modal-open class="modal-btn">онлайн-запись</button>
         </div>
       </div>
     </header>
 
     <main>
       <!--HERO-секция-->
-      <div class="hero-background">
+      <!-- <div class="hero-background">
         <section class="hero">
         <div class="container">
       
@@ -82,9 +103,9 @@
           
         </div>
       </section>
-      </div>
+      </div> -->
       <!--О нас-->
-      <section class="about-us">
+      <!-- <section class="about-us">
         <div class="container">
           <ul class="about-us-list">
             <li>
@@ -121,9 +142,9 @@
             <button data-modal-open type="button" class="modal-btn">онлайн-запись</button>
           </div>
         </div>
-      </section>
+      </section> -->
       <!--Услуги и цены-->
-      <section class="services">
+      <!-- <section class="services">
         <div class="container">
           <p class="subtitle">проведи время в команде лучших мастеров</p>
           <h2 class="title">Услуги и цены</h2>
@@ -175,9 +196,9 @@
           </div>
           <button data-modal-open type="button" class="modal-btn">онлайн-запись</button>
         </div>
-      </section>
+      </section> -->
       <!-- Почему мы -->
-      <section class="why-are-we">
+      <!-- <section class="why-are-we">
         <div class="container">
           <div class="why-are-we-list-wrapper">
             <ul >
@@ -220,9 +241,9 @@
             </p>
           </div>
         </div>
-      </section>
+      </section> -->
       <!-- Наши мастера -->
-      <section class="masters">
+      <!-- <section class="masters">
         <div class="container">
           <p class="subtitle">для настоящих ценителей атмосферы</p>
           <h2 class="title">Наши мастера</h2>
@@ -350,9 +371,9 @@
                 </li>
               </ul>
         </div>
-      </section>
+      </section> -->
       <!-- Галерея работ -->
-      <section class="gallery">
+      <!-- <section class="gallery">
         <div class="container">
           <p class="subtitle">на латинском языке "барба" означает "борода"</p>
           <h2 hidden>Галерея работ</h2>
@@ -391,10 +412,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <div class="contact-wrapper">
         <!-- Форма обратной связи -->
-        <section class="contact-form-section">
+        <!-- <section class="contact-form-section">
           <div class="contact-form-section-wrapper">
             <h2 class="title">Онлайн-запись</h2>
           <form action="#" class="contact-form">
@@ -410,9 +431,9 @@
           <button class="contact-form-btn" type="submit">отправить</button>
           </form>
           </div>
-        </section>
+        </section> -->
         <!-- Контакты -->
-        <section class="contact">
+        <!-- <section class="contact">
           <div class="contact-info">
             <h2 class="title">Контакты</h2>
             <ul class="contact-list">
@@ -457,10 +478,10 @@
             <p class="subtitle">время работы</p>
             <p class="contact-time">Ежедневно с 9:00 до 22:00</p>
           </div>
-        </section>
+        </section> -->
       </div>
     </main>
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container">
         <p class="copyright" lang="en">&COPY; Copyright 2020</p>
         <ul class="social-links">
@@ -474,8 +495,8 @@
           </li>
         </ul>
       </div>
-    </footer>
-    <div data-modal class="backdrop is-hidden">
+    </footer> -->
+    <!-- <div data-modal class="backdrop is-hidden">
       <form action="#" class="modal-form">
       <h2 class="modal-form-title">Онлайн запись</h2>
       <button type="button" data-modal-close class="modal-close-button">X</button>
@@ -497,6 +518,7 @@
     <button class="modal-form-button" type="submit">Отправить</button>  
     </form>  
           </div>
-            <script src="./js/modal.js"></script>
+            <script src="./js/modal.js"></script> -->
+    <script src="./js/menu.js"></script>
   </body>
 </html>

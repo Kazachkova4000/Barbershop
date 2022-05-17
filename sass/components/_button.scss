@@ -1,21 +1,22 @@
-.modal-btn,
-.contact-form-btn,
-.modal-form-button {
+.modal-btn {
+  padding-top: 12px;
+  padding-right: 34px;
+  padding-bottom: 12px;
+  padding-left: 34px;
+
   border: 1px solid $accent-color;
   border-radius: 25px;
-  background-color: transparent;
-  padding-top: 12px;
-  padding-right: 20px;
-  padding-bottom: 12px;
-  padding-left: 20px;
 
+  color: $title-dark-theme-color;
+
+  background-color: transparent;
+  font-family: $main-font;
   font-weight: 600;
   font-size: 12px;
   line-height: 1.33;
   letter-spacing: 0.09em;
   text-transform: uppercase;
   cursor: pointer;
-  color: $title-dark-theme-color;
 
   transition: background-color 250ms linear, color 250ms linear;
 
@@ -26,26 +27,61 @@
   }
 }
 
-.modal-form-button {
-  color: $modal-btn-light-theme-color;
-}
-
-.modal-close-button {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  width: 40px;
-  height: 40px;
-  border-radius: 50px;
-  background-color: transparent;
-  border: 1px solid $text-light-theme-color;
-  cursor: pointer;
-
-  transition: color 250ms linear, border-color 250ms linear;
-
-  &:hover,
-  &:focus {
-    color: $accent-color;
-    border-color: $accent-color;
+@media screen and (min-width: 768px) {
+  .modal-btn {
+    padding-right: 20px;
+    padding-left: 20px;
   }
 }
+
+// .modal-btn,
+// .contact-form-btn,
+// .modal-form-button {
+//   border: 1px solid $accent-color;
+//   border-radius: 25px;
+//   background-color: transparent;
+//   padding-top: 12px;
+//   padding-right: 20px;
+//   padding-bottom: 12px;
+//   padding-left: 20px;
+
+//   font-weight: 600;
+//   font-size: 12px;
+//   line-height: 1.33;
+//   letter-spacing: 0.09em;
+//   text-transform: uppercase;
+//   cursor: pointer;
+//   color: $title-dark-theme-color;
+
+//   transition: background-color 250ms linear, color 250ms linear;
+
+//   &:hover,
+//   &:focus {
+//     background-color: $accent-color;
+//     color: $modal-btn-dark-theme-color;
+//   }
+// }
+
+// .modal-form-button {
+//   color: $modal-btn-light-theme-color;
+// }
+
+// .modal-close-button {
+//   position: absolute;
+//   top: 10px;
+//   right: 10px;
+//   width: 40px;
+//   height: 40px;
+//   border-radius: 50px;
+//   background-color: transparent;
+//   border: 1px solid $text-light-theme-color;
+//   cursor: pointer;
+
+//   transition: color 250ms linear, border-color 250ms linear;
+
+//   &:hover,
+//   &:focus {
+//     color: $accent-color;
+//     border-color: $accent-color;
+//   }
+// }
