@@ -1,7 +1,7 @@
 .header {
-  position: relative;
-
-  background-color: teal;
+  position: absolute;
+  width: 100%;
+  margin: 0 auto;
   padding-top: 40px;
   padding-bottom: 40px;
 
@@ -65,11 +65,6 @@
     fill: #fff;
   }
 
-  .header {
-    max-width: 480px;
-    margin: 0 auto;
-  }
-
   .icon-close {
     display: none;
   }
@@ -83,6 +78,10 @@
     z-index: 1;
 
     &.is-open {
+      position: absolute;
+      top: 30px;
+      right: 40px;
+
       .icon-menu {
         display: none;
       }
@@ -242,58 +241,3 @@
     margin-right: 40px;
   }
 }
-
-// .header {
-//   position: absolute;
-//   width: 100%;
-
-//   .container {
-//     display: flex;
-//     justify-content: space-between;
-//     align-items: center;
-//   } - есть
-// }
-
-// .navigation-list {
-//   @extend %list;
-
-//   display: flex;
-// }
-
-// .navigation-list-item:not(:last-child) { - есть
-//   margin-right: 40px;
-// }
-
-// .navigation {
-//   display: flex;
-//   align-items: center;  - есть
-// }
-
-// .logo {
-//   margin-right: 71px;
-//   z-index: 1;
-// }
-
-// .header-utils {
-//   display: flex;
-//   align-items: center;  - есть
-
-//   .address {
-//     margin-right: 40px;
-//   }
-// }
-
-// .navigation-list-link {
-//   @extend %link;
-//   @extend %font-header;
-
-//   padding-top: 52px;
-//   padding-bottom: 52px;
-// }
-
-// .header-tel {
-//   @extend %link;
-//   @extend %font-header;
-
-//   text-transform: uppercase;
-// }
