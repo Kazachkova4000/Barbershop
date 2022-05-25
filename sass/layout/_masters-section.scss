@@ -1,5 +1,102 @@
+.masters {
+  background-color: $section-bg-color;
+
+  .title {
+    margin-bottom: 44px;
+  }
+}
+
+.masters-list {
+  @extend %list;
+}
+
+.social-list-item-link {
+  @extend %link;
+}
+
+.masters-img {
+  margin-bottom: 30px;
+}
+
+.masters-name {
+  margin-bottom: 8px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: $title-light-theme-color;
+}
+
+.masters-position {
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.36;
+  letter-spacing: 0.02em;
+  color: $accent-color;
+}
+
+.social-list {
+  @extend %list;
+
+  display: flex;
+  justify-content: space-between;
+  max-width: 206px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.social-list-item-link {
+  @extend %link;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.social-item-svg {
+  width: 20px;
+  height: 20px;
+
+  transition: fill 250ms linear;
+
+  .social-list-item-link:hover &,
+  .social-list-item-link:focus & {
+    fill: $accent-color;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .masters-list-item:not(:last-child) {
+    margin-bottom: 64px;
+  }
+
+  .masters-card-text {
+    max-width: 370px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .masters-img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .masters-list {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 // .masters {
-//   @extend %section;
 
 //   background-color: $section-bg-color;
 

@@ -1,4 +1,6 @@
-.modal-btn {
+.modal-btn,
+.modal-form-button {
+  display: block;
   padding-top: 12px;
   padding-right: 34px;
   padding-bottom: 12px;
@@ -23,6 +25,16 @@
   &:hover,
   &:focus {
     background-color: $accent-color;
+    color: $modal-btn-dark-theme-color;
+  }
+}
+
+.about-us .modal-btn {
+  color: $modal-btn-light-theme-color;
+  transition: color 250ms linear, background-color 250ms linear;
+
+  &:hover,
+  &:focus {
     color: $modal-btn-dark-theme-color;
   }
 }
@@ -62,26 +74,28 @@
 //   }
 // }
 
-// .modal-form-button {
-//   color: $modal-btn-light-theme-color;
-// }
+.modal-form-button {
+  color: $modal-btn-light-theme-color;
+  padding-right: 20px;
+  padding-left: 20px;
+}
 
-// .modal-close-button {
-//   position: absolute;
-//   top: 10px;
-//   right: 10px;
-//   width: 40px;
-//   height: 40px;
-//   border-radius: 50px;
-//   background-color: transparent;
-//   border: 1px solid $text-light-theme-color;
-//   cursor: pointer;
+.modal-close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  background-color: transparent;
+  border: 1px solid $text-light-theme-color;
+  cursor: pointer;
 
-//   transition: color 250ms linear, border-color 250ms linear;
+  transition: color 250ms linear, border-color 250ms linear;
 
-//   &:hover,
-//   &:focus {
-//     color: $accent-color;
-//     border-color: $accent-color;
-//   }
-// }
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    border-color: $accent-color;
+  }
+}

@@ -1,5 +1,124 @@
+.services {
+  background-color: #111319;
+  background-image: url(../../images/services-bg-mob.png);
+  background-repeat: no-repeat;
+  background-position: center;
+
+  .title {
+    color: $title-dark-theme-color;
+    margin-bottom: 44px;
+  }
+
+  .subtitle {
+    color: $text-dark-theme-color;
+
+    &::before {
+      background-color: $text-dark-theme-color;
+    }
+  }
+
+  .modal-btn {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.services-list-wrapper {
+  margin-bottom: 50px;
+}
+
+.services-list {
+  @extend %list;
+}
+
+.services-list-wrapper {
+  @extend %list;
+}
+
+.services-item {
+  display: flex;
+  align-items: baseline;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+.services-list-name,
+.services-list-price {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 2.14;
+  letter-spacing: 0.02em;
+  color: $text-dark-theme-color;
+}
+
+.services-underline {
+  flex-grow: 1;
+  height: 1px;
+  margin-left: 6px;
+  margin-right: 6px;
+  background-color: rgba(157, 164, 189, 0.12);
+}
+
+@media screen and (min-width: 768px) {
+  .services {
+    background-image: url(../../images/services-bg-tablet.png);
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .services {
+    background-size: contain;
+  }
+
+  .services-list-wrapper {
+    padding: 30px;
+    background-image: linear-gradient(180deg, #171a24, rgba(23, 26, 36, 0.2));
+
+    & > li:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .services {
+    background-image: url(../../images/services-bg.png);
+  }
+
+  .services-list-name,
+  .services-list-price {
+    font-size: 18px;
+    line-height: 1.67;
+  }
+
+  .services-list-wrapper {
+    display: flex;
+
+    & > li {
+      flex-grow: 1;
+      padding: 30px 40px;
+
+      &:first-child {
+        background-image: linear-gradient(
+          180deg,
+          #171a24 0%,
+          rgba(23, 26, 36, 0.2) 100%
+        );
+      }
+
+      &:last-child {
+        background-image: linear-gradient(
+          180deg,
+          #090b13 0%,
+          rgba(9, 11, 19, 0.2) 100%
+        );
+      }
+    }
+  }
+}
 // .services {
-//   @extend %section;
 
 //   background-color: #111319;
 //   background-image: url(../images/services-bg.png);
@@ -57,15 +176,6 @@
 //   &:not(:last-child) {
 //     margin-bottom: 20px;
 //   }
-// }
-
-// .services-list-name,
-// .services-list-price {
-//   font-weight: 400;
-//   font-size: 18px;
-//   line-height: 1.67;
-//   letter-spacing: 0.02em;
-//   color: $text-dark-theme-color;
 // }
 
 // .services-underline {

@@ -1,56 +1,62 @@
-// .about-us {
-//   @extend %section;
+.about-us {
+  .title {
+    margin-bottom: 20px;
+  }
 
-//   .container {
-//     display: flex;
-//   }
+  .description {
+    color: $text-light-theme-color;
+    margin-bottom: 20px;
+  }
+}
 
-//   .title {
-//     margin-bottom: 20px;
-//   }
+.text {
+  margin-bottom: 40px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.86;
+  letter-spacing: 0.02em;
+  color: $text-light-theme-color;
+}
 
-//   .subtitle {
-//     color: $text-light-theme-color;
+.about-us-list {
+  @extend %list;
+}
 
-//     &::before {
-//       background-color: $text-light-theme-color;
-//     }
-//   }
+@media screen and (max-width: 767px) {
+  .about-us-list {
+    display: none;
+  }
+}
 
-//   .description {
-//     color: $text-light-theme-color;
-//     margin-bottom: 20px;
-//   }
+@media screen and (min-width: 768px) {
+  .about-us {
+    br {
+      display: none;
+    }
 
-//   .text {
-//     margin-bottom: 40px;
+    .container {
+      display: flex;
+    }
+  }
+}
 
-//     font-weight: 400;
-//     font-size: 14px;
-//     line-height: 1.86;
-//     letter-spacing: 0.02em;
-//     color: $text-light-theme-color;
-//   }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .about-us-list {
+    margin-right: 30px;
 
-//   .modal-btn {
-//     color: $modal-btn-light-theme-color;
+    li:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+}
 
-//     transition: color 250ms linear, background-color 250ms linear;
+@media screen and (min-width: 1200px) {
+  .about-us-list {
+    display: flex;
+    margin-right: 64px;
 
-//     &:hover,
-//     &:focus {
-//       color: $modal-btn-dark-theme-color;
-//     }
-//   }
-// }
-
-// .about-us-list {
-//   @extend %list;
-
-//   display: flex;
-//   margin-right: 64px;
-
-//   li:not(:last-child) {
-//     margin-right: 30px;
-//   }
-// }
+    li:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}

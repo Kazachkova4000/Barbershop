@@ -1,5 +1,13 @@
 .hero {
   background-repeat: no-repeat;
+
+  .subtitle {
+    color: $text-dark-theme-color;
+
+    &::before {
+      background-color: $text-dark-theme-color;
+    }
+  }
 }
 
 .hero-title {
@@ -101,10 +109,10 @@
     background-repeat: no-repeat;
     background-position: right;
     background-size: 1100px auto;
-  }
 
-  .container {
-    display: flex;
+    .container {
+      display: flex;
+    }
   }
 
   .social-links {
@@ -124,7 +132,7 @@
 }
 
 @media screen and (max-width: 1199px) {
-  br {
+  .hero br {
     display: none;
   }
 }

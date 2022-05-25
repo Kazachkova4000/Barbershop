@@ -78,7 +78,7 @@
     z-index: 1;
 
     &.is-open {
-      position: absolute;
+      position: fixed;
       top: 30px;
       right: 40px;
 
@@ -94,12 +94,14 @@
 
   .menu-wrapper {
     display: none;
-    position: absolute;
+
+    position: fixed;
     top: 0;
     right: 0;
     background-color: #fff;
     width: 337px;
     height: 796px;
+
     padding-top: 118px;
     padding-bottom: 227px;
     padding-left: 40px;
