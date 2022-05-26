@@ -22,15 +22,15 @@
   }
 }
 
-// %form-input-contact {
-//   &:focus {
-//     border-bottom-color: #fff;
-//   }
+%form-input-contact {
+  &:focus {
+    border-bottom-color: #fff;
+  }
 
-//   &:not(:placeholder-shown) {
-//     border-bottom-color: #fff;
-//   }
-// }
+  &:not(:placeholder-shown) {
+    border-bottom-color: #fff;
+  }
+}
 
 %form-input-modal {
   display: block;

@@ -13,7 +13,6 @@
   }
 }
 .title {
-  // margin-bottom: 44px;
   font-family: $secondary-font;
 
   font-size: 28px;
@@ -77,13 +76,17 @@
   }
 }
 
+.social-links-item:not(:last-child) {
+  margin-right: 40px;
+}
+
 .social-links-item-link {
   @extend %link;
 
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
-  letter-spacing: 0.2em;
+
   color: $title-light-theme-color;
 
   transition: color 250ms linear;
@@ -93,51 +96,3 @@
     color: $accent-color;
   }
 }
-
-// .subtitle {
-//   margin-bottom: 20px;
-
-//   font-weight: 600;
-//   font-size: 11px;
-//   line-height: 1.36;
-//   letter-spacing: 0.1em;
-//   text-transform: uppercase;
-//   color: $text-dark-theme-color;
-
-//   &::before {
-//     display: inline-block;
-//     vertical-align: middle;
-//     margin-right: 20px;
-//     content: '';
-//     width: 60px;
-//     height: 1px;
-//     background-color: $text-dark-theme-color;
-//   }
-// }
-
-// .description {
-//   font-weight: 400;
-//   font-size: 18px;
-//   line-height: 1.67;
-//   letter-spacing: 0.02em;
-//   color: $text-dark-theme-color;
-// }
-
-// .social-links {
-//   @extend %list;
-
-//   display: flex;
-//   align-items: center;
-
-//   &::before {
-//     margin-right: 40px;
-//     content: '';
-//     width: 60px;
-//     height: 1px;
-//     background-color: $title-light-theme-color;
-//   }
-// }
-
-// .address {
-//   font-style: normal;
-// }

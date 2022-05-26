@@ -8,6 +8,10 @@
       background-color: $text-dark-theme-color;
     }
   }
+
+  .social-links-item-link {
+    letter-spacing: 0.2em;
+  }
 }
 
 .hero-title {
@@ -82,10 +86,6 @@
 
   .social-links-wrapper {
     position: relative;
-  }
-
-  .social-links-item:not(:last-child) {
-    margin-right: 40px;
   }
 }
 

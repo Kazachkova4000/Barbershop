@@ -37,7 +37,7 @@
           </svg>
         </button>
 
-        <div class="menu-wrapper" data-menu>
+        <div  class="menu-wrapper" data-menu>
           <nav class="navigation">
             <ul class="navigation-list">
               <li class="navigation-list-item">
@@ -155,7 +155,7 @@
         <div class="container">
           <p class="subtitle">проведи время в команде лучших мастеров</p>
           <h2 class="title">Услуги и цены</h2>
-          <!-- <div class="services-list-wrapper"> -->
+         
             <ul class="services-list-wrapper">
             <li>
               <ul class="services-list">
@@ -207,7 +207,7 @@
             </ul>
             </li>
             </ul>
-          <!-- </div> -->
+        
           <button data-modal-open type="button" class="modal-btn">онлайн-запись</button>
         </div>
       </section>
@@ -400,53 +400,80 @@
         </div>
       </section>
       <!-- Галерея работ -->
-      <!-- <section class="gallery">
+      <section class="gallery section">
         <div class="container">
           <p class="subtitle">на латинском языке "барба" означает "борода"</p>
           <h2 hidden>Галерея работ</h2>
           <ul class="gallery-list">
             <li>
-              <img
-                src="./images/gallery-item-1.jpg"
-                alt="Мастер стрижет клиента"
-                width="272"
+               <picture>
+               <source srcset="./images/gallery-item-1-tablet.jpg" width="330"
+                height="360" media="(min-width:768px) and (max-width: 1199px)" />
+                <source srcset="./images/gallery-item-1.jpg" width="272"
+                height="360" media="(min-width: 1200px)" />
+                <img
+                src="./images/gallery-item-1-mob.jpg"
+                width="418"
                 height="360"
-              />
+                alt="Мастер стрижет клиента"/>
+              </picture>
+           
             </li>
             <li>
-              <img
-                src="./images/gallery-item-2.jpg"
-                alt="Мастер брееет клиента"
-                width="272"
+               <picture>
+               <source srcset="./images/gallery-item-2-tablet.jpg" width="330"
+                height="360" media="(min-width:768px) and (max-width: 1199px)" />
+                <source srcset="./images/gallery-item-2.jpg" width="272"
+                height="360" media="(min-width: 1200px)" />
+                <img
+                src="./images/gallery-item-2-mob.jpg"
+                width="418"
                 height="360"
-              />
+                alt="Мастер брееет клиента"/>
+              </picture>
+            
             </li>
             <li>
-              <img
-                src="./images/gallery-item-3.jpg"
-                alt="Мастер пропаривает лицо клиента"
-                width="272"
+               <picture>
+               <source srcset="./images/gallery-item-3-tablet.jpg" width="330"
+                height="360" media="(min-width:768px) and (max-width: 1199px)" />
+                <source srcset="./images/gallery-item-3.jpg" width="272"
+                height="360" media="(min-width: 1200px)" />
+                <img
+                src="./images/gallery-item-3-mob.jpg"
+                width="418"
                 height="360"
-              />
+                alt="Мастер пропаривает лицо клиента"/>
+              </picture>
+           
             </li>
             <li>
-              <img
-                src="./images/gallery-item-4.jpg"
-                alt="Мастер стрижет клиента"
-                width="272"
+               <picture>
+               <source srcset="./images/gallery-item-4-tablet.jpg" width="330"
+                height="360" media="(min-width:768px) and (max-width: 1199px)" />
+                <source srcset="./images/gallery-item-4.jpg" width="272"
+                height="360" media="(min-width: 1200px)" />
+                <img
+                src="./images/gallery-item-4-mob.jpg"
+                width="418"
                 height="360"
-              />
+                alt="Мастер стрижет клиента"/>
+              </picture>
+           
             </li>
           </ul>
         </div>
-      </section> -->
-      <div class="contact-wrapper">
+      </section>
+      
+   <div class="contact-wrapper ">
         <!-- Форма обратной связи -->
-        <!-- <section class="contact-form-section">
+        <div class="contact-wrapper-container">
+          <section class="contact-form-section section">
           <div class="contact-form-section-wrapper">
             <h2 class="title">Онлайн-запись</h2>
           <form action="#" class="contact-form">
-            <div class="contact-form-fild">
+            <div class="contact-form-fild-wrapper">
+              <div class="contact-form-fild">
               <input class="contact-form-input" type="text" name="user-name" id="user-name" placeholder=" " required>
             <label for="user-name" class="contact-form-label">Имя*</label>
             </div>
@@ -454,15 +481,19 @@
               <input class="contact-form-input" type="tel" name="user-tel" id="user-tel" placeholder=" "  required>
             <label for="user-tel" class="contact-form-label">Телефон*</label>
             </div>
+            </div>
             <textarea class="contact-form-message" name="user-message" id="" placeholder="сообщение"></textarea>
           <button class="contact-form-btn" type="submit">отправить</button>
           </form>
           </div>
-        </section> -->
+        </section>
         <!-- Контакты -->
-        <!-- <section class="contact">
+        <section class="contact section">
           <div class="contact-info">
-            <h2 class="title">Контакты</h2>
+            
+              <h2 class="title">Контакты</h2>
+            <div class="contact-info-wrapper">
+                
             <ul class="contact-list">
               <li class="contact-list-item">
                 <address class="address">
@@ -474,7 +505,7 @@
                     <svg class="contact-item-svg map-pin">
                       <use href="./images/sprite.svg#map-pin"></use>
                     </svg>
-                    <span>ул. Васильковая, 7А Киев, 08132</span></a
+                    <span>ул. Васильковая, 7А </br> Киев, 08132</span></a
                   >
                 </address>
               </li>
@@ -491,7 +522,7 @@
               <li class="contact-list-item">
                 <address class="address">
                   <a
-                    class="contact-link"
+                    class="contact-link contact-link-mail"
                     href="mailto:barbershop@gmail.com"
                     >
                     <svg class="contact-item-svg">
@@ -502,15 +533,21 @@
                 </address>
               </li>
             </ul>
-            <p class="subtitle">время работы</p>
+            
+            <div >
+              <p class="subtitle">время работы</p>
             <p class="contact-time">Ежедневно с 9:00 до 22:00</p>
+            </div>
+            </div>
           </div>
-        </section> -->
+        </section>
+        </div>
       </div>
+      
     </main>
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container">
-        <p class="copyright" lang="en">&COPY; Copyright 2020</p>
+        
         <ul class="social-links">
           <li class="social-links-item">
             <a class="social-links-item-link" href="" lang="en"
@@ -521,8 +558,9 @@
             <a class="social-links-item-link" href="" lang="en">Youtube</a>
           </li>
         </ul>
+        <p class="copyright" lang="en">&COPY; Copyright 2020</p>
       </div>
-    </footer> -->
+    </footer>
     <div data-modal class="backdrop is-hidden">
       <form action="#" class="modal-form">
       <h2 class="modal-form-title">Онлайн запись</h2>

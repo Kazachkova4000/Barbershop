@@ -1,5 +1,6 @@
 .modal-btn,
-.modal-form-button {
+.modal-form-button,
+.contact-form-btn {
   display: block;
   padding-top: 12px;
   padding-right: 34px;
@@ -45,34 +46,6 @@
     padding-left: 20px;
   }
 }
-
-// .modal-btn,
-// .contact-form-btn,
-// .modal-form-button {
-//   border: 1px solid $accent-color;
-//   border-radius: 25px;
-//   background-color: transparent;
-//   padding-top: 12px;
-//   padding-right: 20px;
-//   padding-bottom: 12px;
-//   padding-left: 20px;
-
-//   font-weight: 600;
-//   font-size: 12px;
-//   line-height: 1.33;
-//   letter-spacing: 0.09em;
-//   text-transform: uppercase;
-//   cursor: pointer;
-//   color: $title-dark-theme-color;
-
-//   transition: background-color 250ms linear, color 250ms linear;
-
-//   &:hover,
-//   &:focus {
-//     background-color: $accent-color;
-//     color: $modal-btn-dark-theme-color;
-//   }
-// }
 
 .modal-form-button {
   color: $modal-btn-light-theme-color;
