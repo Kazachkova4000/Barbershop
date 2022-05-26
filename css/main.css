@@ -768,6 +768,7 @@ img {
   .hero {
     padding-top: 208px;
     padding-bottom: 208px;
+    background-color: #1b1a22;
     background-image: url(../../images/hero-mobile.jpg);
     background-repeat: no-repeat;
     background-size: cover;
