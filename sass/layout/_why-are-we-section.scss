@@ -79,6 +79,13 @@
   color: $accent-color;
 }
 
+@media screen and (max-width: 767px) {
+  .why-are-we-list-wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
 @media screen and(min-width:768px) and (max-width: 1199px) {
   .why-are-we-list-wrapper {
     justify-content: flex-end;

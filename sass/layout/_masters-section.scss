@@ -4,11 +4,6 @@
   .title {
     margin-bottom: 44px;
   }
-
-  img {
-    max-width: 100%;
-    height: auto;
-  }
 }
 
 .masters-list {
@@ -21,6 +16,8 @@
 
 .masters-img {
   margin-bottom: 30px;
+  max-width: 100%;
+  height: auto;
 }
 
 .masters-name {
